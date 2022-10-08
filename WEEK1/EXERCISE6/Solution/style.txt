@@ -1,0 +1,20 @@
+Element 1 :
+type de police : Playfair Display
+taille de police : 24px
+couleur : #ffffff
+couleur en arriere plan : #f2994a
+
+Element 2 :
+type de police: Poppins
+taille de police : 16px
+couleur : #ffffff
+couleur en arriere plan : #2d9cdb
+
+Element 3 :
+type de police: Poppins
+taille de police : 16px
+couleurs : #4f4f4f #333333 #828282 #ffffff
+couleur en arriere plan : #2d9cdb #e0e0e0 #27ae60
+hauteur : 422px
+largeur : 341px
+ombre : 0px 10px 30px rgba(51, 51, 51, 0.1)

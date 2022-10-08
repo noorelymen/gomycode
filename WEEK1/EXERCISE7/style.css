@@ -1,0 +1,133 @@
+/* Colors : 
+- Dark cyan: hsl(185, 75%, 39%) 
+- Very dark desaturated blue: hsl(229, 23%, 23%) 
+- Dark grayish blue: hsl(227, 10%, 46%) 
+- Dark gray: hsl(0, 0%, 59%) 
+Font : 
+- Family: [Kumbh Sans](https: //fonts.google.com/specimen/Kumbh+Sans)
+- Size : 18px - Weights: 400, 700 
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    background-color: hsl(185, 75%, 39%);
+    position: relative;
+    overflow: hidden;
+}
+
+img.top, img.bottom {
+    position: absolute;
+}
+
+img.top {
+    top: -500px;
+    left: -340px;
+    width: 1200px;
+    z-index: 0;
+}
+
+img.bottom {
+    top: 500px;
+    right: -340px;
+    width: 1300px;
+    z-index: 0;
+}
+
+div.card {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin:auto;
+    width: 500px;
+    height: 550px;
+    background-color: #fff;
+    border-radius: 20px;
+    z-index: 99999;
+    border: 1px solid #258594;
+    box-shadow: 0 20px 50px hsla(229, 23%, 23%, 0.4);
+    
+}
+
+div.header {
+    height: 200px;
+    background-image: url("images/bg-pattern-card.svg");
+    border-radius: 20px 20px 0 0;
+}
+
+.profile-photo {
+    position: relative;
+    margin-top: -200px;
+}
+
+.pfp {
+    position:absolute;
+    left: 0;
+    right: 0;
+    top: -150px;
+    bottom: 0;
+    margin: auto;
+    border-radius: 50%;
+    width: 150px;
+    border: 10px solid #fff;
+}
+
+.info {
+    position: relative;
+    width: 100%
+    height: auto;
+    padding-top: 100px;
+}
+
+* {
+    font-family: 'Kumbh Sans', sans-serif;
+    text-align: center;
+}
+
+span.age {
+    margin-left: 10px;
+}
+
+.name {
+    font-size: 25px;
+    font-weight: 600;
+    color:hsl(229, 23%, 23%);
+}
+
+.location {
+    font-size: 20px;
+    font-weight: 500;
+    color: hsl(0, 0%, 59%);
+    margin-top: 10px;
+}
+
+.age {
+
+    font-size: 25px;
+    font-weight: 500;
+    color: hsl(0, 0%, 59%);
+}
+
+.stats {
+    padding-top: 30px;
+    width: 100%;
+    position: absolute;
+    bottom: 30px;
+    border-top: 1px solid hsl(0, 0%, 59%);
+}
+
+.followers,
+.likes,
+.photos {
+    width: 30%;
+    display: inline;
+}
+
+

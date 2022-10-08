@@ -1,0 +1,5 @@
+- Surround :       https://marketplace.visualstudio.com/items?itemName=yatki.vscode-surround
+- Prettier :       https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode
+- Material Icon :  https://marketplace.visualstudio.com/items?itemName=PKief.material-icon-theme
+- Live Server :    https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer
+- SVG Previewer :  https://marketplace.visualstudio.com/items?itemName=vitaliymaz.vscode-svg-previewer

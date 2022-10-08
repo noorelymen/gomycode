@@ -1,0 +1,20 @@
+/*
+
+- mettre une bordure et une marge interne sur chaque case du tableau.
+- colorier le fond des lignes impaires du tableau.
+- colorier le texte de la dernière ligne du tableau.
+
+*/
+
+td {
+    border: 1px solid #c1b4a4;
+    padding: 20px;
+}
+
+tr:nth-child(odd) {
+    background-color: #f2ece1;
+}
+
+tr:last-child {
+    color: #a59295;
+}
