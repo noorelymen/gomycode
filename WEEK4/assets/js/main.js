@@ -1,198 +1,292 @@
-// /*
+/*
 
-// ====================================================================================================
-//                                             CONDITIONS
-// ====================================================================================================
+====================================================================================================
+                                            CONDITIONS
+====================================================================================================
 
-// /*
+/*
 
-// ====================================================================================================
-//                                             IF ELSE
-// ====================================================================================================
+====================================================================================================
+                                            IF ELSE
+====================================================================================================
 
-// /*
+/*
 
-// // Excellent > 18
-// // Bon >= 10
-// // Mauvais >= 5
-// // Médiocre < 5
+// Excellent > 18
+// Bon >= 10
+// Mauvais >= 5
+// Médiocre < 5
 
-// */
+*/
 
-// var moyenne = parseFloat(prompt("Donnez votre moyenne"))
+var moyenne = parseFloat(prompt("Donnez votre moyenne"));
 
-// if (moyenne > 18) {
-//     alert("Excellent")
-// } else {
-//     if(moyenne >= 10){
-//         alert("Bon")
-//     } else {
-//         if(moyenne >= 5) {
-//             alert("Mauvais")
-//         } else {
-//             alert("Médiocre")
+if (moyenne > 18) {
+  alert("Excellent");
+} else {
+  if (moyenne >= 10) {
+    alert("Bon");
+  } else {
+    if (moyenne >= 5) {
+      alert("Mauvais");
+    } else {
+      alert("Médiocre");
+    }
+  }
+}
 
-//         }
-//     }
-// }
+var age = prompt("Donnez votre âge");
 
-// var age = prompt()
+var group;
 
-// var group
+if (age > 18) {
+  group = "majeur";
+} else {
+  group = "mineur";
+}
 
-// if(age > 18) {
-//     group = "majeur"
-// } else {
-//     group = "mineur"
-// }
+alert(`Vous êtes ${group}`);
 
-// //ternary expression: condition ? true_expression : false_expression
+//ternary expression: condition ? true_expression : false_expression
 
-// group = age > 18 ? "majeur" : "mineur"
+group = age > 18 ? "majeur" : "mineur";
 
-// var forfait = parseFloat(prompt("Choisissez un forfait"))
+var forfait = parseFloat(prompt("Choisissez un forfait"));
 
-// if (forfait == 1) {
-//     alert("Premium")
-// } else {
-//     if (forfait == 2) {
-//         alert("Pro")
-//     } else {
-//         if (forfait == 3) {
-//             alert("Standard")
-//         } else {
-//             if (forfait == 4) {
-//                 alert("Basic")
-//             }
-//         }
-//     }
-// }
+if (forfait == 1) {
+  alert("Premium");
+} else {
+  if (forfait == 2) {
+    alert("Pro");
+  } else {
+    if (forfait == 3) {
+      alert("Standard");
+    } else {
+      if (forfait == 4) {
+        alert("Basic");
+      }
+    }
+  }
+}
 
-// /*
+/*
 
-// =====================================================================================================
-//                                             SWITCH CASE
-// =====================================================================================================
+=====================================================================================================
+                                            SWITCH CASE
+=====================================================================================================
 
-//     1. test only one condition no && or ||
-//     2. conditions have to be exact var = value not var <> value
-//     3. break: without the break the switch executes the other lines anyway
-//     4. default: all other cases not mentionner
+    1. test only one condition no && or ||
+    2. conditions have to be exact var = value not var <> value
+    3. break: without the break the switch executes the other lines anyway
+    4. default: all other cases not mentionner
 
-// */
+*/
 
-// var forfait = parseFloat(prompt("Choisissez un forfait"))
+var forfait = parseFloat(prompt("Choisissez un forfait"));
 
-// switch(forfait) {
-//     case 1:
-//         alert("Premium")
-//         break
-//     case 2:
-//         alert("Pro")
-//         break
-//     case 3:
-//         alert("Standard")
-//         break
-//     case 4:
-//         alert("Basic")
-//         break
-//     default:
-//         alert("Forfait erroné")
-// }
+switch (forfait) {
+  case 1:
+    alert("Premium");
+    break;
+  case 2:
+    alert("Pro");
+    break;
+  case 3:
+    alert("Standard");
+    break;
+  case 4:
+    alert("Basic");
+    break;
+  default:
+    alert("Forfait erroné");
+}
 
-// /*
+/*
 
-// =====================================================================================================
-//                                             INCREMENTATION
-// =====================================================================================================
+=====================================================================================================
+                                            INCREMENTATION
+=====================================================================================================
 
-//     1.
+    1.
 
-// */
+*/
 
-// var a = 1
-// // a += 1, a++
-// console.log(a++) // displays first increments then
-// console.log(a)
-// console.log(++a) // increments first displays then
+var a = 1;
+// a += 1, a++
+console.log(a++); // displays first increments then
+console.log(a);
+console.log(++a); // increments first displays then
 
-// /*
+/*
 
-// =====================================================================================================
-//                                             WHILE
-// =====================================================================================================
+=====================================================================================================
+                                            WHILE
+=====================================================================================================
 
-//     var a = 1
-//     console.log(a)
-//     a = a + 1
-//     console.log(a)
-//     a = a + 1
-//     console.log(a)
-//     a = a + 1
-//     console.log(a)
-//     a = a + 1
-//     console.log(a)
+    var a = 1
+    console.log(a)
+    a = a + 1
+    console.log(a)
+    a = a + 1
+    console.log(a)
+    a = a + 1
+    console.log(a)
+    a = a + 1
+    console.log(a)
 
-// */
+*/
 
-// var a = 1
+var a = 1;
 
-// while (a < 100) {
-//     console.log(a)
-//     a = a + 1
-// }
+while (a < 100) {
+  console.log(a);
+  a = a + 1;
+}
 
-// var a = parseFloat(prompt("Donner un nombre entre 0 et 10"))
+var a = parseFloat(prompt("Donner un nombre entre 0 et 10"));
 
-// while (a > 10 || a < 0) {
-//     alert("Chiffre incorrect")
-//     var a = parseFloat(prompt("Donner un nombre entre 0 et 10"))
-// }
+while (a > 10 || a < 0) {
+  alert("Chiffre incorrect");
+  var a = parseFloat(prompt("Donner un nombre entre 0 et 10"));
+}
 
-// /*
+/*
 
-// =====================================================================================================
-//                                             DO WHILE
-// =====================================================================================================
+=====================================================================================================
+                                            DO WHILE
+=====================================================================================================
 
-//     1. executes the condition at least once before applying the condition
+    1. executes the condition at least once before applying the condition
 
-//     2. can become a WHILE LOOP
-//     3. we don't know how many times the loop will be executed because it depends on the user
+    2. can become a WHILE LOOP
+    3. we don't know how many times the loop will be executed because it depends on the user
 
-//     our previous example of the while loop is the perfect example for the do while, to avoid
+    our previous example of the while loop is the perfect example for the do while, to avoid
 
-// */
+*/
 
-// var a
+var a;
 
-// do {
-//     a = parseFloat(prompt("Donner un nombre entre 0 et 10"))
-// } while (a > 10 || a < 0)
+do {
+  a = parseFloat(prompt("Donner un nombre entre 0 et 10"));
+} while (a > 10 || a < 0);
 
-// // L'informatique pour automatiser les fonctions redondantes loops
+// L'informatique pour automatiser les fonctions redondantes loops
 
-// /*
-// =====================================================================================================
-//                                             FOR LOOP
-// =====================================================================================================
+/*
+=====================================================================================================
+                                            FOR LOOP
+=====================================================================================================
 
-//     1. we know in advance how many times it will be executed
+    1. we know in advance how many times it will be executed
 
-//     2. can become a WHILE LOOP
+    2. can become a WHILE LOOP
 
-// */
+*/
 
-// var i = 0
+var i = 0;
 
-// while (i < 10) {
-//     console.log(i)
-//     i++
-// }
+while (i < 10) {
+  console.log(i);
+  i++;
+}
 
-// for(var i = 0; i < 10; i+=1) {
-//     console.log(a)
-// }
+for (var i = 0; i < 10; i += 1) {
+  console.log(a);
+}
+
+/*
+=====================================================================================================
+                                            EXERCICE 5
+=====================================================================================================
+*/
+
+console.log(`\n`);
+console.log(`--------------------------------------------------`);
+console.log(`EXERCICE 5`);
+console.log(`--------------------------------------------------`);
+
+var tab = [];
+
+var elements = ["fire", "water", "air", "wood", "earth", "metal"];
+
+console.log(elements.length);
+console.log(elements.shift());
+console.log(elements[Math.round((elements.length - 1) / 2)]);
+console.log(elements[Math.floor(elements.length / 2)]);
+console.log(elements.pop());
+
+var mixedDataTypes = [2, "hello", "20", true, "world", false, ""];
+console.log(mixedDataTypes.length);
+
+var itCompanies = [
+  "Facebook",
+  "Google",
+  "Microsoft",
+  "Apple",
+  "IBM",
+  "Oracle",
+  "Amazon",
+];
+
+console.log(itCompanies);
+console.log(`Number of companies: ${itCompanies.length}`);
+
+console.log(itCompanies.shift());
+console.log(itCompanies[Math.floor(elements.length / 2)]);
+console.log(itCompanies.pop());
+
+/*
+=====================================================================================================
+                                            EXERCICE 6
+=====================================================================================================
+*/
+
+console.log(`--------------------------------------------------`);
+console.log(`EXERCICE 6`);
+console.log(`--------------------------------------------------`);
+
+var a;
+var tab = [];
+
+do {
+  a = prompt("Donner un nombre, ou un . pour arrêter");
+  tab.push(a); // insert value in tab
+} while (a != ".");
+
+console.log(tab);
+tab.pop(); // to delete last item from table
+
+/*
+
+MA SOLUTION
+
+var nombreElements = 0;
+var sum = 0;
+var numb = [];
+
+for (var i = 0; i < tab.length; i++) {
+  if (typeof tab[i] == "number") {
+    numb = push(parseFloat(tab[i]));
+  }
+}
+console.log(typeof numb);
+
+*/
+
+// SOLUTION PROF
+
+console.log(tab);
+var nombreElements = 0;
+var sum = 0;
+
+for (var i = 0; i < tab.length; i++) {
+  var numb = parseFloat(tab[i]);
+  if (numb || numb == 0) {
+    sum = sum + numb;
+    nombreElements++;
+  }
+}
 
 /*
 =====================================================================================================
@@ -200,6 +294,7 @@
 =====================================================================================================
 */
 
+console.log(`\n`);
 console.log(`--------------------------------------------------`);
 console.log(`FOR LOOP`);
 console.log(`--------------------------------------------------`);
@@ -383,8 +478,37 @@ var countriesLength = [];
 var i = 0;
 
 while (i < countries.length) {
-  countriesLength.push([countries[i], countries[i].length]);
+  countriesLength.push([
+    countries[i],
+    countries[i].substr(0, 3).toUpperCase(),
+    countries[i].length,
+  ]);
   i++;
 }
 console.log(countriesLength);
 console.table(countriesLength);
+
+/*
+=====================================================================================================
+                                            EXERCICE 7
+=====================================================================================================
+*/
+
+console.log(`\n`);
+console.log(`--------------------------------------------------`);
+console.log(`EXERCICE 7`);
+console.log(`--------------------------------------------------`);
+
+/*
+=====================================================================================================
+                                            OBJETCTS
+=====================================================================================================
+*/
+
+console.log(`\n`);
+console.log(`--------------------------------------------------`);
+console.log(`OBJECTS`);
+console.log(`--------------------------------------------------`);
+
+var dog = {};
+console.log(dog);
