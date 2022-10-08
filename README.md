@@ -11,5 +11,5 @@ Projects built during the Gomycode fullstack javascript course.
 ## WEEK 3
 
 
-## WEEK 2
+## WEEK 4
 
