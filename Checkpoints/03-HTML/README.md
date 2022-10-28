@@ -27,12 +27,12 @@ J'attends votre corrections et vos remarques par rapport à cet exercice :)
    - Video to the first project (UHOME) in the work section
 
 3. Use local links, lists, or tables:
-   <br>
+
    I used them all, local links using anchor tags < a href="#section-id" >
    to navigate between the different sections on the same page
 
 4. Use HTML forms
-   <br>
+
    I used the < form > tag inside of a < table > to better structure the form
 
    I also used the following elements to build my contact form:
