@@ -6,11 +6,6 @@ du site afin de mettre en pratique ce que j'ai appris sans me soucier
 du design et de la partie CSS pour le moment, je pense que c'était
 justement le but.
 
-Je ne sais pas si à ce stade nous avons le droit d'utiliser les classes
-CSS ou si c'est réservé pour le checkpoint CSS mais j'ai pensé que ça
-faisait quand même partie de la structure HTML et que, si besoin, j'en
-rajouterai s'il m'en manque une fois que je ferai le CSS.
-
 J'attends votre corrections et vos remarques par rapport à cet exercice :)
 
 # CHECKPOINT INSTRUCTIONS

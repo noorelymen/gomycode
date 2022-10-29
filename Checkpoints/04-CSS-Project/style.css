@@ -1,0 +1,6 @@
+nav h2, 
+nav li, 
+nav .menu, 
+nav .menu ul {
+    display: inline;
+}
