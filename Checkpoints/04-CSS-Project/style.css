@@ -4,3 +4,7 @@ nav .menu,
 nav .menu ul {
     display: inline;
 }
+
+* {
+    font-family: 'Roboto', sans-serif;
+}
