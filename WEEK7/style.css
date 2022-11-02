@@ -1,0 +1,32 @@
+.container {
+    height: 500px;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: 50% 50%;
+}
+
+.item1 {
+    background-color: blue;
+    grid-column-start: 2; /* the line in which the item starts */
+    grid-column-end: span 2; /* pour dire de prendre 2 fr */
+}
+
+.item2 {
+    background-color: red;
+    grid-column-start: 3; /* the line in which the item starts */
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
+#garden {
+    height: 500px;
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    grid-template-rows: 20% 20% 20% 20% 20%;
+  }
+  
+  .water {
+    background-color: aqua;
+    order: 0;
+  }
