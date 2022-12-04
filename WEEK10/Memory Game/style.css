@@ -1,0 +1,80 @@
+body {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffac41;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  height: 30%;
+}
+
+.game {
+  width: 80%;
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  perspective: 1000px;
+}
+
+.card {
+  position: relative;
+  height: 100%;
+  width: 30%;
+}
+
+.card_face {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: solid 1px black;
+  background-color: black;
+  backface-visibility: hidden;
+  transition: transform 500ms ease-in-out;
+}
+
+.fas {
+  transform: scale(3);
+  color: #ff1e56;
+}
+
+.card_front {
+  transform: rotateY(180deg);
+}
+
+.card.visible .card_front {
+  transform: rotateY(0);
+}
+
+.card.visible .card_back {
+  transform: rotateY(-180deg);
+}
+
+.card.matched > .card_front .fas {
+  animation: dance 1s linear infinite 500ms;
+}
+
+@keyframes dance {
+  0%,
+  100% {
+    transform: rotate(0) scale(3);
+  }
+  25% {
+    transform: rotate(-30deg) scale(3);
+  }
+  75% {
+    transform: rotate(30deg) scale(3);
+  }
+}
+
+.card > * {
+  pointer-events: none;
+}
