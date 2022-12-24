@@ -1,0 +1,20 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  overflow-x: hidden;
+}
+
+.bg-blue {
+  background-color: #081695;
+}
+
+.hero-content {
+  padding-top: 150px;
+}
+
+.text-blue {
+  color: #081595;
+}
+
+
