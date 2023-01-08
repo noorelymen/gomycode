@@ -5,9 +5,10 @@ import About from "../About"
 import Features from "../Features"
 import TeamLayout from "./TeamLayout"
 import Footer from "../Footer"
+import PopUp from "../modals/PopUp"
 import React from "react"
 
-const HomeLayout = ({children}) => {
+const HomeLayout = () => {
     return (
         <React.Fragment>
             <Header/>

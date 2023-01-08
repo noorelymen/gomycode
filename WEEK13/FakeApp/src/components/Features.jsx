@@ -16,7 +16,6 @@ const Features = () => {
           </div>
           <div className="carousel-inner">
           {slides ? slides.map(slides =>{
-            console.log(slides.name)
                             return(
                               <div className={slides.id === 1 ? "carousel-item active" : "carousel-item"} key={slides.id} >
                                   <img src={slides.name} className="d-block w-100" alt="..." />
