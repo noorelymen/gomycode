@@ -1,53 +1,11 @@
-/* #root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
-}
-
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
-}
-
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
-}
-
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
-} */
-
-
-
+/* GENERAL CSS */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
   font-size: 16px;
+  color: #fff;
 }
 
 html, 
@@ -63,7 +21,7 @@ body {
 }
 
 .container {
-  width: 80%;
+  width: 95%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -79,29 +37,33 @@ ul li a {
   color: #fff;
 }
 
+hr {
+  width: 50px;
+  border: 2px solid #e50914;
+  margin: auto;
+  margin-bottom: 5em;
+}
+
 /* HEADER */
 
 .section.header {
   height: 90px;
-  position: sticky;
+  position: absolute;
   z-index: 999;
   /* background-color: cadetblue; */
-  border-bottom: 1px solid rgba(255, 255, 255, 0.22);
+  /* border-bottom: 1px solid rgba(255, 255, 255, 0.22); */
 }
 
 div.logo {
-  width: 30%;
-  color: #e50914;
+  width: 50%;
 }
 
-div.logo h1{
-  letter-spacing: 5px;
-  text-transform: uppercase;
-  font-size: 2.5rem !important;
+div.logo img{
+  max-width: 200px;
 }
 
 div.menu {
-  width: 70%;
+  width: 50%;
   display: flex;
   justify-content: flex-end;
 }
@@ -114,7 +76,7 @@ div.menu ul {
 }
 
 .login-button {
-  padding: 10px 30px;
+  padding: 5px 15px;
   border: 1px solid #e50914;
   border-radius: 5px;
   background-color: #e50914;
@@ -123,13 +85,121 @@ div.menu ul {
 
 /* HERO */
 .hero {
-  height: 800px;
+  height: 730px;
+  background-image:
+  radial-gradient(circle, rgba(245, 246, 252, 0), rgba(0, 0, 0, 0.73)), url('./src/assets/hero-banner.jpg');
+  background-size: cover;
+  background-position: center center;
+  color: white;
+  padding: 20px;
 }
 
 .col {
   width: 50%;
 }
 
-.hero-img {
-  height: 80vh;
+.content {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.hero h1,
+.hero h4, 
+.hero p {
+  line-height: 1em;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 4rem;
+  margin-bottom: .5em;
+}
+
+.hero h4 {
+  font-size: 1.5rem;
+  font-weight: 300;
+}
+
+.hero p {
+  margin: 2.5em 0;
+}
+
+.hero .search-bar input {
+  width: 80%;
+  padding: 20px;
+}
+
+.hero .search-bar button {
+  width: 20%;
+  padding: 20px;
+  background-color: #e50914;
+  border: 1.7px solid #e50914;
+  color: #fff;
+}
+
+/* MOVIES SECTION */
+
+.section.movie {
+  padding: 100px 0;
+}
+
+.movie .content h1{
+  color: #fff;
+  font-size: 3rem;
+  margin-bottom: .3em;
+  text-align: center;
+}
+
+.card {
+  height: 400px;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  text-align: center;
+}
+
+.movie .row {
+  width: 80vw;
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+}
+
+.movie .column {
+  flex: 0 1 calc(20% - 8px)
+}
+
+.card-img {
+  max-width: 200px;
+  border-radius: 20px;
+}
+
+/* MOVIE PAGE */
+
+.section .movie-page {
+  min-height: 100vh;
+}
+
+.movie-page .container {
+  min-height: 100%;
+  color: #fff;
+}
+
+.movie-page .content {
+  min-height: 100%;
+  width: 100%;
+  color: #fff;
+}
+
+.left-column,
+.right-column {
+  width: 50% !important;
+  display: flex;
+  flex-direction: column;
+  align-items: space-between;
+  justify-content: center;
 }

@@ -1,0 +1,26 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif !important;
+  overflow-x: hidden;
+}
+
+.bg-blue {
+   background-color: #081595;
+}
+
+
+
+.text-blue {
+  color: #081595;
+}
+
+.hero-content ,.faq-content{
+  padding-top: 150px;
+}
+
+.svg-wave {
+  transform: rotate(180deg);
+}
+
+

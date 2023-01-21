@@ -1,11 +1,12 @@
 import React from 'react'
+import img from '../../assets/logo.png'
 
 export default function Header() {
   return (
     <div className='section header'>
         <div className="container">
             <div className="logo">
-                <h1>Netflix</h1>
+                <img src={img} alt="" />
             </div>
             <div className="menu">
                 <ul className="menu-items">

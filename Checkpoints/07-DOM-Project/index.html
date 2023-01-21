@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- FONT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- FONT AWESOME -->
+    <script
+      src="https://kit.fontawesome.com/333064f739.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- STYLING -->
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Cart Page</title>
+  </head>
+  <body>
+    <section>
+      <!-- CONTAINER START -->
+      <div class="container">
+        <header>
+          <h2 class="title">Shopping Cart</h2>
+          <h3 class="items-count"><span>3</span> items</h3>
+        </header>
+
+        <!-- PRODUCT WRAPPER START -->
+
+        <div class="products-wrapper">
+          <!-- PRODUCT TITLES START -->
+          <div class="product-row">
+            <div class="product-column product-img">
+              <h3>Image</h3>
+            </div>
+            <div class="product-column product-name">
+              <h3>Name</h3>
+            </div>
+            <div class="product-column product-price">
+              <h3>Price</h3>
+            </div>
+            <div class="product-column product-quantity">
+              <h3>Quantity</h3>
+            </div>
+            <div class="product-column product-action">
+              <h3>Actions</h3>
+            </div>
+          </div>
+          <!-- PRODUCT TITLES END -->
+
+          <!-- RENDERING PRODUCTS HERE -->
+        </div>
+        <!-- PRODUCTS WRAPPER END -->
+
+        <footer></footer>
+      </div>
+      <!-- CONTAINER END -->
+    </section>
+
+    <!-- We need to link the products first than the script that uses the products array -->
+    <script src="./products.js"></script>
+    <script src="./script.js"></script>
+  </body>
+</html>
