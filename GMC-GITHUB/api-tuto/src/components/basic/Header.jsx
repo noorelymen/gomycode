@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 export default function Header() {
   return (
@@ -22,7 +23,7 @@ export default function Header() {
                         <a href="/contact">Contact</a>
                     </li>
                     <li className="menu-item">
-                        <a className="login-button" href="#">Cart(<span className="cart-count">0</span>)</a>
+                        <Link className="login-button" to="/cart">Cart(<span className="cart-count">0</span>)</Link>
                     </li>
                 </ul>
             </div>

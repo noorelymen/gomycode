@@ -1,11 +1,7 @@
-import React, { useEffect, useState } from "react";
-import { useParams } from "react-router-dom";
-import useFetch from "../hooks/useFetch";
-export default function DetailsPage() {
-  const params = useParams();
-  const { data, loading, error } = useFetch(
-    `https://fakestoreapi.com/products/${params.id}`
-  );
+import React from 'react'
 
-  return <div>DetailsPage</div>;
+export default function ProductPage() {
+  return (
+    <div>ProductPage</div>
+  )
 }

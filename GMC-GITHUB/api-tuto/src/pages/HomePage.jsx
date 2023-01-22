@@ -9,7 +9,7 @@ export default function HomePage() {
 
     <PageLayout>
         <Hero />
-      <ProductList />
+        <ProductList />
     </PageLayout>
 
   )
