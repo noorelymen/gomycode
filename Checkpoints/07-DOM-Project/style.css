@@ -117,7 +117,7 @@ header .items-count {
 }
 
 .product-column:nth-of-type(2) {
-    width: 35%;
+    width: 30%;
 }
 
 .product-column:nth-of-type(3) {
@@ -128,7 +128,10 @@ header .items-count {
     width: 10%;
 }
 .product-column:nth-of-type(5) {
-    width: 25%;
+    width: 10%;
+}
+.product-column:nth-of-type(6) {
+    width: 30%;
 }
 
 .product-quantity input {
@@ -156,7 +159,7 @@ header .items-count {
 
 .qty-number {
     width: 20%;
-    margin: 0 20px;
+    margin: 0 10px;
 }
 
 .like {
