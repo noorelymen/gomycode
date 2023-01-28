@@ -1,0 +1,5 @@
+    SWITCH (n) DO
+        DEFAULT : Write("Go");
+        CASE 1 : Write("My");
+        CASE 2 : Write("Code");
+    END_SWITCH

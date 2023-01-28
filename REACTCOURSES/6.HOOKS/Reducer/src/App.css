@@ -1,0 +1,14 @@
+#root {
+    width: 100vw !important;
+    height: 100vh !important;
+    text-align: center;
+}
+
+.App {
+    width: 100vw !important;
+    height: 100vh !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
