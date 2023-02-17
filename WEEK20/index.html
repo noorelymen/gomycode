@@ -9,14 +9,27 @@
   <body>
     <script>
       class Person {
-        constructor(name, age) {
+        constructor(name, age, cars) {
           this.name = name;
           this.age = age;
+          this.cars = cars;
         }
         printInfo() {
           console.log(`
             Nom: ${this.name}
-            Age: ${this.age}`);
+            Age: ${this.age}
+            Vehicule: ${this.vehicule}`);
+        }
+      }
+
+      //inheritance
+      class Student extends Person {
+        constructor(name, age, cars, matricule) {
+          super(name, age, cars);
+          this.matricule = matricule;
+        }
+        getMatricule() {
+          return this.matricule;
         }
       }
 
@@ -37,9 +50,19 @@
       let person1 = new Person("Abdelkader", 25);
       let person2 = new Person("Hichem", 27);
 
+      let vehicule1 = new Vehicule("Maruti", "Alto", "Gray");
+      let vehicule2 = new Vehicule("207", "Peugeot", "White");
+
+      let arrV = [vehicule1, vehicule2];
+      let person3 = new Person("Ibrahim", 17, arrV);
+
       person1.printInfo();
       person2.printInfo();
+      person3.printInfo();
       //console.log(person1);
+
+      let student = new Student("Hichem", 27, arrV, 1238796847);
+      student.printInfo;
     </script>
   </body>
 </html>
