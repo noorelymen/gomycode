@@ -1,0 +1,41 @@
+:root {
+  --color-red: #e50914;
+  --color-gray: #303030;
+  --color-black: #000000;
+  --color-white: #efefef;
+}
+
+body {
+  font-family: "Poppins", sans-serif !important;
+  background-color: var(--color-black) !important;
+  overflow-x: hidden;
+}
+
+.bg-red {
+  background-color: var(--color-red) !important;
+}
+.text-red {
+  color: var(--color-red) !important;
+}
+
+.bg-gray {
+  background-color: var(--color-gray) !important;
+}
+.text-gray {
+  color: var(--color-gray) !important;
+}
+
+.bg-white {
+  background-color: var(--color-white) !important;
+}
+.text-white {
+  color: var(--color-white) !important;
+}
+
+.bg-black {
+  background-color: var(--color-black) !important;
+}
+
+.color-black {
+  color: var(--color-black) !important;
+}
